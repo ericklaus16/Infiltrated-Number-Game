@@ -25,7 +25,7 @@ int main(){
 
 bool Jogar(int Dificuldade){
     cout << "You are a KGB russian agent infiltrated in a north-american government HQ." << endl;
-    cout << "Your mission is to discover this " << Dificuldade << " level safe code. " << "Hints: " << endl;
+    cout << "Your mission is to discover the vault password (Security: " << Dificuldade << ")" << endl << "Hints: " << endl;
 
     int A = rand() % Dificuldade + Dificuldade;
     int B = rand() % Dificuldade + Dificuldade;
