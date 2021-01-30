@@ -15,12 +15,18 @@ int main(){
     while(Dif <= DifMax){
         srand(time(NULL));
         bool levelCompleto = Jogar(Dif);
-        system("CLS");    
+        system("clear");
         if(levelCompleto){
             ++Dif;
         }
+        else {
+            cout << "You were killed by Stalin. :(" << endl;
+            return 0;
+        }
     }
-    return 0; 
+
+    cout << "Congratulations! You successfully defeated Stalin and saved your Russian comrades!" << endl;
+    return 0;
 };
 
 bool Jogar(int Dificuldade){
@@ -41,6 +47,7 @@ bool Jogar(int Dificuldade){
     int ChuteA = 0;
     int ChuteB = 0; 
     int ChuteC = 0;
+    cout << "Your choice: ";
     cin >> ChuteA;
     cin >> ChuteB;
     cin >> ChuteC;
